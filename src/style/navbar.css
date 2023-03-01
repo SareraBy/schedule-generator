@@ -1,0 +1,10 @@
+.navbar_button{
+ text-decoration: none;
+  padding: 8px;
+    color: #282c34;
+    font-size: 16px;
+    transform: scale(100%);
+}.navbar_button:hover{
+     transform: scale(93%);
+    color: rgba(76,76,76);
+  }
