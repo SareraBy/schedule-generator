@@ -14,6 +14,7 @@ const AppRouter = () => {
             <Route path="/schedule" element={<Schedule />} />
             <Route path="*" element={<Loader/>} />
             {location.pathname === '/404' && <Navigate to={location.state?.from || '/'} replace />}
+            {location.pathname === '/403' && <Navigate to={location.state?.from || '/'} replace />}
         </Routes>
     );
 };
