@@ -2,14 +2,13 @@ import React, {useEffect, useState} from 'react';
 import {Button, Col, Container, Form, ListGroup, Row} from "react-bootstrap";
 import LessonList from "./Lessons/LessonList";
 import AddLessonForm from "./Lessons/AddLessonForm";
-
+import "../style/delet_anim.css"
 const BlockSchedule = ({week, onAddBlockSchedule, data}) => {
 
     const [lessons, setLessons] = useState(data ? data.lessons: []);
 
     const handleAddLesson = (lesson) => {
         setLessons([...lessons, lesson]);
-
     };
 
     const handleDeleteLesson = (index) => {

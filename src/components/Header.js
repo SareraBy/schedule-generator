@@ -1,11 +1,21 @@
 import React from 'react';
 import {Container, Image, Nav, Navbar, NavDropdown, OverlayTrigger, Tooltip} from "react-bootstrap";
 import photo from '../store/logo.png'
-import {Link} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import "../style/navbar.css"
 import telegram from "../store/telegram.png"
 const Header = () => {
 
+    const location = useLocation();
+
+    const exect = [
+        '/leader',
+        {/* Можно вводить любую часть домена без Header */}
+    ];
+
+    if (location.pathname === '/loader' || exect.includes(location.pathname)) {
+        return null;
+    }
 
     return (
         <Navbar className={'p-4 w-100'} style={{background:"lightgreen"}} variant="light" expand="lg">
