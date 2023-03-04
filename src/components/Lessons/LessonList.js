@@ -16,12 +16,13 @@ const LessonList = ({ lessons, onDeleteLesson }) => {
         <ListGroup>
             <TransitionGroup>
                 {lessons.map((lesson, index) => (
-                    <CSSTransition key={lesson.lesson} classNames="delete" timeout={500}>
+                    <CSSTransition key={index} classNames="delete" timeout={500}>
                         <ListGroup.Item className="m-1">
                             <div className="d-flex justify-content-between align-items-center">
                                 <div>
-                                    <h5>{lesson.lesson}</h5>
+                                    <h5>{index+1}. {lesson.lesson}</h5>
                                     <p>
+
                                         Время: {lesson.time}
                                         <br />
                                         Учитель: {lesson.teacher}
@@ -31,8 +32,9 @@ const LessonList = ({ lessons, onDeleteLesson }) => {
                                         Код: {lesson.code}
                                     </p>
                                 </div>
+
                                 <Button variant="outline-danger" onClick={() => onDeleteLesson(index)}>
-                                    Delete
+                                    X
                                 </Button>
                             </div>
                         </ListGroup.Item>

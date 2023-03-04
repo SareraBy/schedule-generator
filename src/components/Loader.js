@@ -14,7 +14,6 @@ const Loader = () => {
 
                 <Spinner className={"mt-5 mx-3"} animation="border" />
 
-                Error 404
             </div>
         );
     } else {

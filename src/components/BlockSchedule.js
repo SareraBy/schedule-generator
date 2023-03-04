@@ -26,18 +26,6 @@ const BlockSchedule = ({week, onAddBlockSchedule, data}) => {
         }
     }, [data]);
 
-    const handleDownload = () => {
-        const data = JSON.stringify({ lessons }, null, 2);
-        const blob = new Blob([data], { type: "application/json" });
-        const url = URL.createObjectURL(blob);
-        const link = document.createElement("a");
-        link.href = url;
-        link.download = `${week}.json`;
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    };
-
     const handleLoadLessons = (data) => {
         setLessons(data.lessons);
     };
