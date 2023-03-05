@@ -56,23 +56,22 @@ const Schedule = () => {
 
     return (
         <>
-            <div  className={"d-flex justify-content-center"} data-aos="flip-up">
+            <div  className={"d-flex justify-content-center "} data-aos="flip-up">
 
 
-                <Form>
-                    <Form.Group className={"p-2 mt-4 m-3"} controlId='file'>
-                        <Form.Label>Завантажити файл JSON!</Form.Label>
-                        <Form.Control type='file' autoFocus name='file' required onChange={handleFileUpload} />
+                <Form >
+                    <Form.Group className={"p-1 mt-4 "} controlId='file'>
+                        <Form.Label>Завантажити файл</Form.Label>
+                        <Form.Control size="sm"  type='file' autoFocus name='file'  required onChange={handleFileUpload} />
                     </Form.Group>
                 </Form>
 
-                <Button  className={"mt-4 m-3  acceptbutton"} style={{ borderRadius:'15px'}} variant="success" type="button" onClick={handleLoadData}>
-                   <Image src={upload}/>
+                <Button  className={"mt-4 mx-1  acceptbutton"} style={{ borderRadius:'15px'}} variant="success" type="button" onClick={handleLoadData}>
+                   <Image height={70} width={70}  src={upload}/>
                 </Button>
-                <Button className={"mt-4 m-3  acceptbutton"} style={{ borderRadius:'15px'}} variant="success" type="submit"  onClick={handleDownloadAll}>
-                    <Image src={download}/>
+                <Button className={"mt-4 mx-1  acceptbutton"} style={{ borderRadius:'15px'}} variant="success" type="submit"  onClick={handleDownloadAll}>
+                    <Image height={70} width={70} src={download}/>
                 </Button>
-
 
             </div>
 
