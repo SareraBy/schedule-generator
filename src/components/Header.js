@@ -20,9 +20,9 @@ const Header = () => {
     return (
         <Navbar  className={'p-4 w-100 '} style={{background:"lightgreen"}} variant="light" expand="lg">
 
-           <Link className={"justify-content-center d-flex"} style={{width:"300px"}}  to={'/'}>
+           <Link className={"justify-content-center d-flex"} style={{width:"270px"}}  to={'/'}>
                <Image
-                   width={'300px'}
+                   width={'270px'}
                       src={photo} />
            </Link>
 
