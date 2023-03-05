@@ -1,12 +1,15 @@
 import React from 'react';
 import {Button, Card, Carousel, Container, Image} from "react-bootstrap";
 import "../style/acceptbutton.css"
+import {Link} from "react-router-dom";
 const Home = () => {
+
+
     return (
         <>
         <div className={"d-flex justify-content-center mt-5"} style={{top:'100%'}} >
 
-            <Button style={{height:"50px"}} className={"acceptbutton h"} href={"schedule"} variant="outline-success"   size="lg">
+            <Button style={{height:"50px"}} className={"acceptbutton "} href={"schedule"} variant="outline-success"   size="lg">
                 Редактировать Рассписание
             </Button>
 
