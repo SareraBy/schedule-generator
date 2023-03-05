@@ -18,11 +18,11 @@ const Header = () => {
     }
 
     return (
-        <Navbar  className={'p-4 w-100 '} style={{background:"lightgreen"}} variant="light" expand="lg">
+        <Navbar  className={'p-4'} style={{background:"lightgreen"}} variant="light" expand="lg">
 
-           <Link className={"justify-content-center d-flex"} style={{width:"270px"}}  to={'/'}>
+           <Link className={"justify-content-center d-flex"} style={{width:"260px"}}  to={'/'}>
                <Image
-                   width={'270px'}
+                   width={'260px'}
                       src={photo} />
            </Link>
 

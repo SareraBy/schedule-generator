@@ -69,7 +69,7 @@ const Schedule = () => {
                 <Button  className={"mt-4 mx-1  acceptbutton"} style={{ borderRadius:'15px'}} variant="success" type="button" onClick={handleLoadData}>
                    <Image height={70} width={70}  src={upload}/>
                 </Button>
-                <Button className={"mt-4 mx-1  acceptbutton"} style={{ borderRadius:'15px'}} variant="success" type="submit"  onClick={handleDownloadAll}>
+                <Button className={"mt-4 mx -1  acceptbutton"} style={{ borderRadius:'15px'}} variant="success" type="submit"  onClick={handleDownloadAll}>
                     <Image height={70} width={70} src={download}/>
                 </Button>
 
