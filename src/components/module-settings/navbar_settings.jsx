@@ -17,8 +17,8 @@ const Navbar_settings = () => {
 
 
     return (
-        <div className={"position-static"}>
-        <Button > > </Button>
+        <div className={"position-fixed mb-auto"}>
+        <Button className={"acceptbutton"}  variant={"outline-success"} > > </Button>
         </div>
     );
 };

@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import Schedule from "../pages/schedule";
 import Loader from "./Loader";
 import Header from "./Header";
+import Navbar_settings from "./module-settings/navbar_settings";
 
 const AppRouter = () => {
 
@@ -13,6 +14,7 @@ const AppRouter = () => {
     return (
         <>
             <Header/>
+          <Navbar_settings/>
         <Routes>
 
             <Route  path="/" element={<Home />} />

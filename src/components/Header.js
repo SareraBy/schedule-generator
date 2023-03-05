@@ -18,22 +18,22 @@ const Header = () => {
     }
 
     return (
-        <Navbar className={'p-4 w-100'} style={{background:"lightgreen"}} variant="light" expand="lg">
+        <Navbar  className={'p-4 w-100 '} style={{background:"lightgreen"}} variant="light" expand="lg">
 
-           <Link className={"h-50 justify-content-center d-flex"} style={{width:"500px"}}  to={'/'}>
-               <img className={"w-75 h-50"} src={photo} />
+           <Link className={"justify-content-center d-flex"} style={{width:"300px"}}  to={'/'}>
+               <Image
+                   width={'300px'}
+                      src={photo} />
            </Link>
-            <Container>
+
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
 
-                    <Nav style={{marginLeft:"auto"}}>
+                    <Nav className="justify-content-end flex-grow-1 pe-3" >
 
                             <Link className={"navbar_button"} to={"/"} > Home </Link>
 
                             <Link className={"navbar_button"} to={"schedule"} > Schedule </Link>
-
-
 
                     </Nav>
                     <OverlayTrigger
@@ -57,8 +57,6 @@ const Header = () => {
                         )}
                     </OverlayTrigger>
                 </Navbar.Collapse>
-
-            </Container>
         </Navbar>
     );
 };
