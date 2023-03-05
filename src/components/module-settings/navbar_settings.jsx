@@ -8,6 +8,8 @@ const Navbar_settings = () => {
 
     const exect = [
         '/loader',
+        '/schedule',
+        '/',
         {/* Можно вводить любую часть домена без Header */}
     ];
 
@@ -17,8 +19,13 @@ const Navbar_settings = () => {
 
 
     return (
-        <div className={"position-fixed mb-auto"}>
-        <Button className={"acceptbutton"}  variant={"outline-success"} > > </Button>
+        <div className=" flex-grow-1 pe-3">
+        <Button
+            className={"mt-4 acceptbutton position-fixed"}
+            variant="outline-success"
+            type="submit"
+
+        > > </Button>
         </div>
     );
 };
