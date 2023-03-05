@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import BlockSchedule from "../components/BlockSchedule";
-import {Button, Form} from "react-bootstrap";
+import {Button, Form, Image} from "react-bootstrap";
 import "../style/acceptbutton.css"
-
+import download from '../store/download.png'
+import upload from '../store/upload.png'
 
 const Schedule = () => {
 
@@ -60,41 +61,43 @@ const Schedule = () => {
 
                 <Form>
                     <Form.Group className={"p-2 mt-4 m-3"} controlId='file'>
-                        <Form.Label>Upload file JSON!</Form.Label>
+                        <Form.Label>Завантажити файл JSON!</Form.Label>
                         <Form.Control type='file' autoFocus name='file' required onChange={handleFileUpload} />
                     </Form.Group>
                 </Form>
-                <Button  className={"mt-4 m-3 w-25 acceptbutton"} variant="outline-success" type="button" onClick={handleLoadData}>
-                    Upload
+
+                <Button  className={"mt-4 m-3  acceptbutton"} style={{ borderRadius:'15px'}} variant="success" type="button" onClick={handleLoadData}>
+                   <Image src={upload}/>
                 </Button>
-                <Button className={"mt-4 m-3 w-25 acceptbutton"} variant="outline-success" type="submit"  onClick={handleDownloadAll}>
-                    Download
+                <Button className={"mt-4 m-3  acceptbutton"} style={{ borderRadius:'15px'}} variant="success" type="submit"  onClick={handleDownloadAll}>
+                    <Image src={download}/>
                 </Button>
+
 
             </div>
 
             <div className={"d-grid"} data-aos="zoom-out-right">
-                <BlockSchedule week={"воскресенье"} className="block-schedule" onAddBlockSchedule={handleAddBlockSchedule}   data={
-                    scheduleData[findWeekIndex(scheduleData, "воскресенье")] ?? null
+                <BlockSchedule week={"понеділок"} className="block-schedule" onAddBlockSchedule={handleAddBlockSchedule}   data={
+                    scheduleData[findWeekIndex(scheduleData, "понеділок")] ?? null
                 }/>
-                <BlockSchedule week={"понедельник"} className="block-schedule" onAddBlockSchedule={handleAddBlockSchedule}   data={
-                    scheduleData[findWeekIndex(scheduleData, "понедельник")] ?? null
+                <BlockSchedule week={"вівторок"} className="block-schedule" onAddBlockSchedule={handleAddBlockSchedule}   data={
+                    scheduleData[findWeekIndex(scheduleData, "вівторок")] ?? null
+                } />
+                <BlockSchedule week={"середа"} className="block-schedule" onAddBlockSchedule={handleAddBlockSchedule}  data={
+                    scheduleData[findWeekIndex(scheduleData, "середа")] ?? null
+                } />
+                <BlockSchedule week={"четвер"} className="block-schedule" onAddBlockSchedule={handleAddBlockSchedule}   data={
+                    scheduleData[findWeekIndex(scheduleData, "четвер")] ?? null
+                } />
+                <BlockSchedule week={"п'ятниця"} className="block-schedule" onAddBlockSchedule={handleAddBlockSchedule}   data={
+                    scheduleData[findWeekIndex(scheduleData, "п'ятниця")] ?? null
+                } />
+                <BlockSchedule week={"субота"} className="block-schedule" onAddBlockSchedule={handleAddBlockSchedule}   data={
+                    scheduleData[findWeekIndex(scheduleData, "субота")] ?? null
+                } />
+                <BlockSchedule week={"неділя"} className="block-schedule" onAddBlockSchedule={handleAddBlockSchedule}   data={
+                    scheduleData[findWeekIndex(scheduleData, "неділя")] ?? null
                 }/>
-                <BlockSchedule week={"вторник"} className="block-schedule" onAddBlockSchedule={handleAddBlockSchedule}   data={
-                    scheduleData[findWeekIndex(scheduleData, "вторник")] ?? null
-                } />
-                <BlockSchedule week={"среда"} className="block-schedule" onAddBlockSchedule={handleAddBlockSchedule}  data={
-                    scheduleData[findWeekIndex(scheduleData, "среда")] ?? null
-                } />
-                <BlockSchedule week={"четверг"} className="block-schedule" onAddBlockSchedule={handleAddBlockSchedule}   data={
-                    scheduleData[findWeekIndex(scheduleData, "четверг")] ?? null
-                } />
-                <BlockSchedule week={"пятница"} className="block-schedule" onAddBlockSchedule={handleAddBlockSchedule}   data={
-                    scheduleData[findWeekIndex(scheduleData, "пятница")] ?? null
-                } />
-                <BlockSchedule week={"суббота"} className="block-schedule" onAddBlockSchedule={handleAddBlockSchedule}   data={
-                    scheduleData[findWeekIndex(scheduleData, "суббота")] ?? null
-                } />
         </div>
 
         </>

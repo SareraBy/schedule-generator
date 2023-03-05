@@ -31,6 +31,8 @@ const BlockSchedule = ({week, onAddBlockSchedule, data}) => {
     };
 
 
+
+
     return (
 
 
@@ -39,7 +41,7 @@ const BlockSchedule = ({week, onAddBlockSchedule, data}) => {
             <Container>
                 <Row className="mt-3">
                     <Col>
-                        <h2>Расписание дня:</h2>
+                        <h2>Розклад дня:</h2>
                         <AddLessonForm onAddLesson={handleAddLesson} />
                     </Col>
                 </Row>

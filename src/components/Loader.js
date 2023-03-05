@@ -27,7 +27,7 @@ const Loader = () => {
 
                     Loading...
                 <br/>
-                Вернуться <Link to={'/'}>Home.</Link>
+                Повернутися <Link to={'/'}>Home.</Link>
                 </div>
             </div>
         );

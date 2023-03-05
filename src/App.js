@@ -1,5 +1,3 @@
-
-import './App.css';
 import AppRouter from "./components/AppRouter";
 import {Route} from "react-router-dom";
 
@@ -9,9 +7,9 @@ function App() {
 
 
   return (
-<>
-  <AppRouter/>
-</>
+  <div>
+    <AppRouter/>
+  </div>
   );
 }
 

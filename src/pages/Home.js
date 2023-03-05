@@ -6,37 +6,17 @@ const Home = () => {
 
 
     return (
-        <>
-        <div className={"d-flex justify-content-center mt-5"} style={{top:'100%'}} >
+    <div className={"mt-5 d-flex flex-column justify-content-center"}>
+        <div className={"d-flex justify-content-center "} >
 
-            <Button style={{height:"50px"}} className={"acceptbutton "} href={"/schedule"} variant="outline-success"   size="lg">
-                Редактировать Расписание
+            <Button style={{height:"50px"}} className={"acceptbutton"} href={"/schedule"} variant="outline-success"   size="lg">
+                Редактировать расписание
             </Button>
-
         </div>
-
-            <div className={"d-flex m-3"}>
-            <div id="list-example" className="list-group mx-3">
-
-                <a className    ="list-group-item list-group-item-action" href="#download">Установка</a>
-                <a className="list-group-item list-group-item-action" href="#create">Создание расписание</a>
-                <a className="list-group-item list-group-item-action" href="#upload">Загрузка расписание</a>
-                <a className="list-group-item list-group-item-action" href="#use-able">Пользывание ботом</a>
-
-            </div>
-            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" className="scrollspy-example m-2"
-                 tabIndex="0">
-                <h4 id="download"> Как установить бота </h4>
-                <p>Text</p>
-                <h4 id="create">Как создать рассписание </h4>
-                <p>Text</p>
-                <h4 id="upload">Как загрузка рассписание</h4>
-                <p>Text</p>
-                <h4 id="use-able">Как пользывание ботом</h4>
-                <p>Text</p>
-            </div>
-            </div>
-        </>
+        <footer className={"d-flex mt-5 justify-content-center "} >
+    <Link to={'/info'}>  <Button size={'lg'}  variant="outline-success" size="lg"  className={"acceptbutton "} ></Button></Link>
+    </footer>
+ </div>
     );
 };
 

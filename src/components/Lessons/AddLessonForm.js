@@ -28,10 +28,10 @@ const AddLessonForm  = ({ onAddLesson }) => {
     return (
         <Form onSubmit={handleSubmit}>
             <Form.Group controlId="time">
-                <Form.Label>Время</Form.Label>
+                <Form.Label>Час</Form.Label>
                 <Form.Control
                     type="text"
-                    placeholder="Введите время"
+                    placeholder="Введіть час"
                     value={time}
                     onChange={(e) => setTime(e.target.value)}
                     required
@@ -41,27 +41,27 @@ const AddLessonForm  = ({ onAddLesson }) => {
                 <Form.Label>Предмет</Form.Label>
                 <Form.Control
                     type="text"
-                    placeholder="Введите название предмета"
+                    placeholder="Введіть назву предмета"
                     value={lesson}
                     onChange={(e) => setLesson(e.target.value)}
                     required
                 />
             </Form.Group>
             <Form.Group controlId="teacher">
-                <Form.Label>Преподаватель</Form.Label>
+                <Form.Label>Викладача</Form.Label>
                 <Form.Control
                     type="text"
-                    placeholder="Введите ФИО преподавателя"
+                    placeholder="Введіть ПІБ викладача"
                     value={teacher}
                     onChange={(e) => setTeacher(e.target.value)}
                     required
                 />
             </Form.Group>
             <Form.Group controlId="identifier">
-                <Form.Label>Идентификатор</Form.Label>
+                <Form.Label>Ідентифікатор</Form.Label>
                 <Form.Control
                     type="text"
-                    placeholder="Введите идентификатор"
+                    placeholder="Введіть ідентифікатор"
                     value={identifier}
                     onChange={(e) => setIdentifier(e.target.value)}
                     required
@@ -71,7 +71,7 @@ const AddLessonForm  = ({ onAddLesson }) => {
                 <Form.Label>Код</Form.Label>
                 <Form.Control
                     type="text"
-                    placeholder="Введите код"
+                    placeholder="Введіть код"
                     value={code}
                     onChange={(e) => setCode(e.target.value)}
                     required
@@ -82,7 +82,7 @@ const AddLessonForm  = ({ onAddLesson }) => {
                 variant="outline-success"
                 type="submit"
             >
-                Add lesson
+                Додати
             </Button>
         </Form>
     );

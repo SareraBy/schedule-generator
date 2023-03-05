@@ -5,6 +5,7 @@ import Schedule from "../pages/schedule";
 import Loader from "./Loader";
 import Header from "./Header";
 import Navbar_settings from "./module-settings/navbar_settings";
+import Info from "../pages/Info";
 
 const AppRouter = () => {
 
@@ -19,7 +20,7 @@ const AppRouter = () => {
 
             <Route  path="/" element={<Home />} />
             <Route exact path="/schedule" element={<Schedule />} />
-
+            <Route exact path={'/info'} element={<Info/>}/>
             {location.pathname === '/404' && <Navigate to={location.state?.from || '/'} replace />}
             {location.pathname === '/403' && <Navigate to={location.state?.from || '/'} replace />}
             {location.pathname === '/502' && <Navigate to={location.state?.from || '/'} replace />}
