@@ -55,7 +55,7 @@ const Schedule = () => {
 
     return (
         <>
-            <div className={"d-flex justify-content-center"}>
+            <div  className={"d-flex justify-content-center"} data-aos="flip-up">
 
 
                 <Form>
@@ -63,7 +63,6 @@ const Schedule = () => {
                         <Form.Label>Upload file JSON!</Form.Label>
                         <Form.Control type='file' autoFocus name='file' required onChange={handleFileUpload} />
                     </Form.Group>
-
                 </Form>
                 <Button  className={"mt-4 m-3 w-25 acceptbutton"} variant="outline-success" type="button" onClick={handleLoadData}>
                     Upload
@@ -74,7 +73,7 @@ const Schedule = () => {
 
             </div>
 
-            <div className={"d-grid"}>
+            <div className={"d-grid"} data-aos="zoom-out-right">
                 <BlockSchedule week={"воскресенье"} className="block-schedule" onAddBlockSchedule={handleAddBlockSchedule}   data={
                     scheduleData[findWeekIndex(scheduleData, "воскресенье")] ?? null
                 }/>

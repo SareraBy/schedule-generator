@@ -1,14 +1,13 @@
-import React from 'react';
-import {Button, Card, Carousel, Container, Image} from "react-bootstrap";
-import photo from "../store/telegram.png"
-const Home = () => {
-    return (
-        <div className={"d-flex"}>
-        <Container>
+    import React, {useRef} from 'react';
+    import {Button, Card, Carousel, Container, Image} from "react-bootstrap";
+    import "../style/acceptbutton.css"
+    const Home = () => {
 
-        </Container>
-        </div>
-    );
-};
+        return (
+            <div>
 
-export default Home;
+            </div>
+        );
+    };
+
+    export default Home;

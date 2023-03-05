@@ -9,7 +9,7 @@ const Header = () => {
     const location = useLocation();
 
     const exect = [
-        '/leader',
+        '/loader',
         {/* Можно вводить любую часть домена без Header */}
     ];
 
