@@ -1,7 +1,9 @@
 .acceptbutton{
     background: white;
     color: black;
+
 }.acceptbutton:hover{
      background: lightgreen;
      color: black;
+
  }

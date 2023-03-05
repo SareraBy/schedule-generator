@@ -14,7 +14,7 @@ const Home = () => {
             </Button>
         </div>
         <footer className={"d-flex mt-5 justify-content-center "} >
-    <Link to={'/info'}>  <Button size={'lg'}  variant="outline-success" size="lg"  className={"acceptbutton "} disabled={true}>Скоро</Button></Link>
+      <Button size={'lg'}  variant="outline-success" size="lg"  className={"acceptbutton "} disabled>Скоро</Button>
     </footer>
  </div>
     );
