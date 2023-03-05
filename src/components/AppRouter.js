@@ -14,7 +14,7 @@ const AppRouter = () => {
     return (
         <>
             <Header/>
-          <Navbar_settings/>
+
         <Routes>
 
             <Route  path="/" element={<Home />} />
