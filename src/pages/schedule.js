@@ -76,7 +76,7 @@ const Schedule = () => {
 
             </div>
 
-            <div className={"d-grid"} data-aos="zoom-out-right">
+            <div className={"d-grid"} data-aos="zoom-out-left">
                 <BlockSchedule week={"понеділок"} className="block-schedule" onAddBlockSchedule={handleAddBlockSchedule}   data={
                     scheduleData[findWeekIndex(scheduleData, "понеділок")] ?? null
                 }/>
