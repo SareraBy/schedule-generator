@@ -10,11 +10,11 @@ const Home = () => {
         <div className={"d-flex justify-content-center "} >
 
             <Button style={{height:"50px"}} className={"acceptbutton"} href={"/schedule"} variant="outline-success"   size="lg">
-                Редагунвання розкладу
+                Редагування розкладу
             </Button>
         </div>
         <footer className={"d-flex mt-5 justify-content-center "} >
-      <Button size={'lg'}  variant="outline-success" size="lg"  className={"acceptbutton "} disabled>Скоро</Button>
+      <Button size={'lg'}  variant="outline-success" size="lg"  className={"acceptbutton "} disabled>Як користуватись?</Button>
     </footer>
  </div>
     );

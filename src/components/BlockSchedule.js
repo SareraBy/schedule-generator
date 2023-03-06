@@ -11,7 +11,7 @@ const BlockSchedule = ({week, onAddBlockSchedule, data}) => {
         setLessons([...lessons, lesson]);
     };
 
-    const handleDeleteLesson = (index) => {
+        const handleDeleteLesson = (index) => {
         const updatedLessons = lessons.filter((lesson, i) => i !== index);
         setLessons(updatedLessons);
     };
@@ -30,7 +30,25 @@ const BlockSchedule = ({week, onAddBlockSchedule, data}) => {
         setLessons(data.lessons);
     };
 
+    const handleMoveLessonUp = (index) => {
+        if (index > 0) {
+            const updatedLessons = [...lessons];
+            const temp = updatedLessons[index];
+            updatedLessons[index] = updatedLessons[index-1];
+            updatedLessons[index-1] = temp;
+            setLessons(updatedLessons);
+        }
+    };
 
+    const handleMoveLessonDown = (index) => {
+        if (index < lessons.length-1) {
+            const updatedLessons = [...lessons];
+            const temp = updatedLessons[index];
+            updatedLessons[index] = updatedLessons[index+1];
+            updatedLessons[index+1] = temp;
+            setLessons(updatedLessons);
+        }
+    };
 
 
     return (
@@ -47,7 +65,7 @@ const BlockSchedule = ({week, onAddBlockSchedule, data}) => {
                 </Row>
                 <Row className="mt-3">
                     <Col>
-                        <LessonList lessons={lessons} onDeleteLesson={handleDeleteLesson}/>
+                        <LessonList lessons={lessons} onDeleteLesson={handleDeleteLesson} handleMoveLessonUp={handleMoveLessonUp} handleMoveLessonDown={handleMoveLessonDown} />
                     </Col>
                 </Row>
 

@@ -66,7 +66,7 @@ const Schedule = () => {
 
 
                 <Form >
-                    <Form.Group className={"p-1 mt-4 "} controlId='file'>
+                    <Form.Group className={" mx-5 mt-4 "} controlId='file'>
                         <Form.Label>Завантажити файл</Form.Label>
                         <Form.Control size="sm"  type='file' autoFocus name='file'  required onChange={handleFileUpload} />
                     </Form.Group>
