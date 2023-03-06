@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import BlockSchedule from "../components/BlockSchedule";
 import {Button, Form, Image} from "react-bootstrap";
 import "../style/acceptbutton.css"
@@ -20,6 +20,7 @@ const Schedule = () => {
     };
 
     const handleLoadData = () => {
+        if (!file) return;
         const reader = new FileReader();
         reader.onload = (event) => {
             const data = JSON.parse(event.target.result);
@@ -27,7 +28,12 @@ const Schedule = () => {
         };
         reader.readAsText(file);
         document.getElementById("file").value = "";
+        setFile(null);
     };
+
+    useEffect(() => {
+        handleLoadData();
+    }, [handleFileUpload, handleLoadData]);
 
     const handleDownloadAll = () => {
         const json = JSON.stringify(scheduleData);
@@ -66,10 +72,7 @@ const Schedule = () => {
                     </Form.Group>
                 </Form>
 
-                <Button  className={"mt-4 mx-1  acceptbutton"} style={{ borderRadius:'15px'}} variant="success" type="button" onClick={handleLoadData}>
-                   <Image height={70} width={70}  src={upload}/>
-                </Button>
-                <Button className={"mt-4 mx -1  acceptbutton"} style={{ borderRadius:'15px'}} variant="success" type="submit"  onClick={handleDownloadAll}>
+                <Button className={"mt-4 mx-5  acceptbutton"} style={{ borderRadius:'15px'}} variant="success" type="submit"  onClick={handleDownloadAll}>
                     <Image height={70} width={70} src={download}/>
                 </Button>
 

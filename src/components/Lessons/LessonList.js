@@ -5,12 +5,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 const LessonList = ({ lessons, onDeleteLesson }) => {
     const [showButton, setShowButton] = useState(true);
 
-    const handleDelete = (index) => {
-        setShowButton(false);
-        setTimeout(() => {
-            onDeleteLesson(index);
-        }, 100);
-    };
+
 
     return (
         <ListGroup>
