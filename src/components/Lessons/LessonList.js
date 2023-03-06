@@ -9,7 +9,7 @@
             <ListGroup>
                 <TransitionGroup>
                     {lessons.map((lesson, index) => (
-                        <CSSTransition key={lesson.lesson } classNames="delete" timeout={500}>
+                        <CSSTransition key={index} classNames="delete" timeout={500}>
                             <ListGroup.Item className="m-1">
                                 <div className=" d-flex justify-content-between align-items-center">
                                     <div className={"text-wrap word-wrap-break-word"}>
