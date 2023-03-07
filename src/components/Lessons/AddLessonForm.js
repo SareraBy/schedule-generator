@@ -58,10 +58,10 @@ const AddLessonForm  = ({ onAddLesson }) => {
                 />
             </Form.Group>
             <Form.Group controlId="identifier">
-                <Form.Label>Ідентифікатор</Form.Label>
+                <Form.Label>Пароль</Form.Label>
                 <Form.Control
                     type="text"
-                    placeholder="Введіть ідентифікатор"
+                    placeholder="Введіть пароль"
                     value={identifier}
                     onChange={(e) => setIdentifier(e.target.value)}
                     required

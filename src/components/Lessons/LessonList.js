@@ -12,17 +12,17 @@
                         <CSSTransition key={index} classNames="delete" timeout={500}>
                             <ListGroup.Item className="m-1">
                                 <div className=" d-flex justify-content-between align-items-center">
-                                    <div className={"text-wrap word-wrap-break-word"}>
-                                        <h5>{index+1}. {lesson.lesson}</h5>
+                                    <div  className={"text-wrap text-break"}>
+                                        <h5 >{index+1}. {lesson.lesson}</h5>
                                         <p>  Час: {lesson.time} </p>
                                         <p>    Вчитель: {lesson.teacher}</p>
-                                        <p>    Ідентифікатор: {lesson.identifier}</p>
                                         <p>    Код: {lesson.code} </p>
+                                        <p>    Пароль: {lesson.identifier}</p>
                                     </div>
 
 
 
-                                    <div className={"d-grid"}>
+                                    <div className={"d-grid p-2"}>
                                             {index >= 1 &&
                                                 <Button  className={"acceptbutton mb-2"} variant="success" key={index}    onClick={() => handleMoveLessonUp(index)}>
                                                     &#8593;

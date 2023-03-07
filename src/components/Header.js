@@ -18,7 +18,7 @@ const Header = () => {
     }
 
     return (
-        <Navbar  className={'p-4'} style={{background:"lightgreen"}} variant="light" expand="lg">
+        <Navbar  className={'p-4 '} style={{background:"lightgreen"}} variant="light" expand="lg">
 
            <Link className={"justify-content-center d-flex"} style={{width:"260px"}}  to={'/'}>
                <Image
