@@ -54,12 +54,12 @@ const BlockSchedule = ({week, onAddBlockSchedule, data}) => {
     return (
 
 
-        <div className={'d-grid text-wrap word-wrap-break-word rounded-4 m-2 p-2 '} style={{ border: "1px solid black" }}>
+        <div className={'d-grid text-wrap word-wrap-break-word rounded-4 m-3 p-2 '} style={{ border: "1px solid black" }}>
             <h3 className={"text-center"}>{week}</h3>
             <Container>
                 <Row className="mt-3">
                     <Col>
-                        <h2>Розклад дня:</h2>
+                        <h2>Додати пару:</h2>
                         <AddLessonForm onAddLesson={handleAddLesson} />
                     </Col>
                 </Row>
