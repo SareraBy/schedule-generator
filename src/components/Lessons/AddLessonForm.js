@@ -57,16 +57,6 @@ const AddLessonForm  = ({ onAddLesson }) => {
                     required
                 />
             </Form.Group>
-            <Form.Group controlId="identifier">
-                <Form.Label>Пароль</Form.Label>
-                <Form.Control
-                    type="text"
-                    placeholder="Введіть пароль"
-                    value={identifier}
-                    onChange={(e) => setIdentifier(e.target.value)}
-                    required
-                />
-            </Form.Group>
             <Form.Group controlId="code">
                 <Form.Label>Код</Form.Label>
                 <Form.Control
@@ -74,6 +64,16 @@ const AddLessonForm  = ({ onAddLesson }) => {
                     placeholder="Введіть код"
                     value={code}
                     onChange={(e) => setCode(e.target.value)}
+                    required
+                />
+            </Form.Group>
+            <Form.Group controlId="identifier">
+                <Form.Label>Пароль</Form.Label>
+                <Form.Control
+                    type="text"
+                    placeholder="Введіть пароль"
+                    value={identifier}
+                    onChange={(e) => setIdentifier(e.target.value)}
                     required
                 />
             </Form.Group>

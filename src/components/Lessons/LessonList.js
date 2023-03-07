@@ -1,7 +1,9 @@
     import React, { useState } from 'react';
-    import { Button, ListGroup } from 'react-bootstrap';
+    import {Button, Image, ListGroup} from 'react-bootstrap';
     import { CSSTransition, TransitionGroup } from 'react-transition-group';
-
+    import up from './up.png'
+    import down from './down.png'
+    import deletei from './delete.png'
     const LessonList = ({ lessons, onDeleteLesson, handleMoveLessonUp, handleMoveLessonDown }) => {
 
 
@@ -25,16 +27,16 @@
                                     <div className={"d-grid p-2"}>
                                             {index >= 1 &&
                                                 <Button  className={"acceptbutton mb-2"} variant="success" key={index}    onClick={() => handleMoveLessonUp(index)}>
-                                                    &#8593;
+                                                    <Image width={25} height={25} src={up}/>
                                                 </Button>
                                             }
                                             {index < lessons.length - 1 &&
                                                 <Button className={"mb-2 acceptbutton"} variant="success" key={index} onClick={() => handleMoveLessonDown(index)}>
-                                                    &#8595;
+                                                    <Image width={25} height={25} src={down}/>
                                                 </Button>
                                             }
                                             <Button variant="outline-danger" onClick={() => onDeleteLesson(index)}>
-                                                X
+                                                <Image width={25} height={25} src={deletei}/>
                                             </Button>
                                         </div>
 
