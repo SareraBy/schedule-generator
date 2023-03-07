@@ -24,20 +24,19 @@
 
 
 
-                                    <div className={"d-grid p-2"}>
+                                    <div className={"d-grid m-2 p-2"}>
                                             {index >= 1 &&
-                                                <Button  className={"acceptbutton mb-2"} variant="success" key={index}    onClick={() => handleMoveLessonUp(index)}>
-                                                    <Image width={25} height={25} src={up}/>
-                                                </Button>
+
+                                                    <Image  className={"mb-2 animka"} key={index}    onClick={() => handleMoveLessonUp(index)} width={25} height={25} src={up}/>
+
                                             }
                                             {index < lessons.length - 1 &&
-                                                <Button className={"mb-2 acceptbutton"} variant="success" key={index} onClick={() => handleMoveLessonDown(index)}>
-                                                    <Image width={25} height={25} src={down}/>
-                                                </Button>
+                                                    <Image className={"mb-2 animka"}  key={index} onClick={() => handleMoveLessonDown(index)} width={25} height={25} src={down}/>
+
                                             }
-                                            <Button variant="outline-danger" onClick={() => onDeleteLesson(index)}>
-                                                <Image width={25} height={25} src={deletei}/>
-                                            </Button>
+
+                                                <Image className={"animka"} onClick={() => onDeleteLesson(index)} width={23} height={23} src={deletei}/>
+
                                         </div>
 
 

@@ -7,3 +7,11 @@
      color: black;
 
  }
+
+ .animka{
+     transform: scale(1);
+     border-radius: 5px;
+ }.animka:hover{
+       transform: scale(1.2);
+
+   }
