@@ -62,8 +62,8 @@ const AddLessonForm  = ({ onAddLesson }) => {
                 <Form.Control
                     type="text"
                     placeholder="Введіть код"
-                    value={code}
-                    onChange={(e) => setCode(e.target.value)}
+                    value={identifier}
+                    onChange={(e) => setIdentifier(e.target.value)}
                     required
                 />
             </Form.Group>
@@ -72,8 +72,8 @@ const AddLessonForm  = ({ onAddLesson }) => {
                 <Form.Control
                     type="text"
                     placeholder="Введіть пароль"
-                    value={identifier}
-                    onChange={(e) => setIdentifier(e.target.value)}
+                    value={code}
+                    onChange={(e) => setCode(e.target.value)}
                     required
                 />
             </Form.Group>
