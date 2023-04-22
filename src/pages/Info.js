@@ -2,26 +2,17 @@ import React from 'react';
 
 const Info = () => {
     return (
-        <div className={"d-flex mt-5"}>
-            <div id="list-example" className="list-group mx-3">
-
-                <a className    ="list-group-item list-group-item-action" href="#download">Установка</a>
-                <a className="list-group-item list-group-item-action" href="#create">Создание расписание</a>
-                <a className="list-group-item list-group-item-action" href="#upload">Загрузка расписание</a>
-                <a className="list-group-item list-group-item-action" href="#use-able">Пользывание ботом</a>
-
-            </div>
-            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" className="scrollspy-example m-2"
-                 tabIndex="0">
-                <h4 id="download"> Как установить бота </h4>
-                <p>Text</p>
-                <h4 id="create">Как создать рассписание </h4>
-                <p>Text</p>
-                <h4 id="upload">Как загрузка рассписание</h4>
-                <p>Text</p>
-                <h4 id="use-able">Как пользывание ботом</h4>
-                <p>Text</p>
-            </div>
+        <div className={"d-grid mt-5 text-center justify-content-center"} data-aos="flip-down">
+            <h2 className={"text-center mb-5"}>Видео як користуватись</h2>
+            <iframe
+                width="600"
+                height="325"
+                src="https://www.youtube.com/embed/qIIojARxz40"
+                title="Як користуватись"
+                style={{borderRadius:"25px", border:"5px solid lightgreen"}}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+            ></iframe>
         </div>
     );
 };
