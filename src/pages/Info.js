@@ -8,7 +8,7 @@ const Info = () => {
             <iframe
                 width="600"
                 height="325"
-                src="https://www.youtube.com/embed/qIIojARxz40"
+                src="https://www.youtube.com/embed/JFXHGVtggCY"
                 title="Як користуватись"
                 style={{borderRadius:"25px", border:"5px solid lightgreen"}}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
