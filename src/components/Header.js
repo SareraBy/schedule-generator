@@ -38,7 +38,7 @@ const Header = () => {
                     </Nav>
                     <OverlayTrigger
                         placement="bottom"
-                        overlay={<Tooltip id="button-tooltip-2">Ссылка на бота</Tooltip>}
+                        overlay={<Tooltip id="button-tooltip-2"> Посилання на бота </Tooltip>}
                     >
                         {({ ref, ...triggerHandler }) => (
                     <Link
