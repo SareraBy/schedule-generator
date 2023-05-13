@@ -3,7 +3,7 @@ import React from 'react';
 const Info = () => {
     return (
         <div className={"d-grid mt-5 text-center justify-content-center"} data-aos="flip-down">
-            <h2 className={"text-center mb-5"}>Видео як користуватись</h2>
+            <h2 className={"text-center mb-5"}>Відео як користуватись</h2>
 
             <iframe
                 width="600"
